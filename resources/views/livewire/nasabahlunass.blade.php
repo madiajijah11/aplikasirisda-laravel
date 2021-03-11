@@ -50,8 +50,8 @@
                             <td class="border px-2 py-2">{{ $row->created_at }}</td>
                             <td class="border px-2 py-2">{{ $row->updated_at }}</td>
                             <td class="border px-2 py-2">
-                                <button wire:click="edit({{ $row->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded">Edit</button>
-                                <button wire:click="delete({{ $row->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 rounded" onclick="return confirm('Yakin ingin menghapus?') || event.stopImmediatePropagation()">Hapus</button>
+                                <button wire:click="edit({{ $row->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-1 rounded">Edit</button>
+                                <button wire:click="delete({{ $row->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-1 rounded" onclick="return confirm('Yakin ingin menghapus?') || event.stopImmediatePropagation()">Hapus</button>
                             </td>
                         </tr>
                         @empty
